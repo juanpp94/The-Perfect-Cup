@@ -36,7 +36,7 @@
     <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
 
     <!-- Navigation -->
-    <?php require_once 'nav.php'?>
+    <?php require_once 'nav.php';?>
     
     <div class="container">
 
