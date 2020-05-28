@@ -35,9 +35,26 @@
     <div class="brand">The Perfect Cup</div>
     <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
 
+	<?php
+		
+	if (isset($_GET["logout"])) {
+		
+		if ($_GET["logout"] == "true") { ?>
+			
+			<div class="alert alert-success">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			<strong>You have been logged out of the system.</strong>
+			</div>   
+
+	<?php
+		}
+	}
+	?>
+
+	
     <!-- Navigation -->
-    <?php require_once 'nav.php';?>
-    
+    <?php require_once 'nav.php'; ?>
+
     <div class="container">
 
         <div class="row">
@@ -90,29 +107,16 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">HOW TO MAKE  
-
+                    <h2 class="intro-text text-center">HOW TO MAKE 
                         <strong>THE PERFECT CUP OF COFFEE</strong>
                     </h2>
                     <hr>
                     <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
                     <hr class="visible-xs">
-                    <p> Making the perfect cup of coffee can be
-                    challenging! With so many unique flavours and 
-                    recipes to choose from, where do you begin?
-                    Our website provides you with the best recipes
-                    from around the world. Wheter you prefer your
-                    coffee hot and mild or bracingly cold and 
-                    strong - we are sure to have what you are
-                    looking for. For access to unlimited recipes 
-                    you must register! Registration is free. Click
-                    here to get started!</p>
-                    
+                    <p>Making the perfect cup of coffee can be challenging! With so many unique flavours and recipes to choose from, where do you begin? Our website provides you with the best recipes from around the world. Whether you prefer your coffee hot and mild or bracingly cold and strong - we are sure to have what you are looking for. For access to unlimited recipes you must register! Registration is free. Click here to get started!</p>
                 </div>
             </div>
         </div>
-
-        
 
     </div>
     <!-- /.container -->
@@ -121,7 +125,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; The Perfect Cup 2020</p>
+                    <p>Copyright &copy; The Perfect Cup 2016</p>
                 </div>
             </div>
         </div>

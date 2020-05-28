@@ -1,3 +1,11 @@
+<?php
+//Initialize Session
+session_start();
+if(isset($_SESSION['fname'])){
+    $fname = $_SESSION['fname'];
+    $lname = $_SESSION['lname'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,6 +51,9 @@
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
+                    <h2 class="text-center">Welcome <?php echo $fname; echo " "; echo $lname ?>
+                      <a href="logout.php">Logout</a>
+                    </h2>
                     <hr>
                     <h2 class="intro-text text-center">
                         THE PERFECT CUP
@@ -191,3 +202,10 @@
 </body>
 
 </html>
+
+<?php
+}
+else {
+    header('location: login.php');
+}
+?>
